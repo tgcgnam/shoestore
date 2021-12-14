@@ -1,10 +1,6 @@
-@media (max-width: 767px) {
-    .header {
-        display: none;
-    }
-    .nav__respon {
-        display: block;
-    }
+/* mobile and tablet */
+
+@media (max-width:991px) {
     .cart-header .cart-icon {
         width: 35px;
         height: 35px;
@@ -38,6 +34,22 @@
         padding: 0 20px 20px 20px;
         z-index: 2;
     }
+    .banner__content {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+    .header {
+        display: none;
+    }
+    .nav__respon {
+        display: block;
+    }
 }
 
 @media (min-width: 767px) and (max-width:991px) {
@@ -46,5 +58,11 @@
     }
     .nav__respon {
         display: block;
+    }
+    .slide__banner .content_banner h3 {
+        font-size: 40px;
+    }
+    .card {
+        padding: 20px;
     }
 }
