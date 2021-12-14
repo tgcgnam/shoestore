@@ -132,6 +132,18 @@ header {
 }
 
 
+/* nav responsive */
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+.navbar-light .navbar-toggler:focus,
+.offcanvas-header .btn-close:focus {
+    box-shadow: none;
+}
+
+
 /* main */
 
 
@@ -218,6 +230,10 @@ header {
     background-color: #333;
     border: none;
     outline: none;
+}
+
+.slick-dots .slick-active button {
+    background-color: red;
 }
 
 

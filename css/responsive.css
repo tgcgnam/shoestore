@@ -5,6 +5,39 @@
     .nav__respon {
         display: block;
     }
+    .cart-header .cart-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 22px;
+        border: none;
+        color: #000;
+    }
+    .slide__banner {
+        margin-top: 104px;
+    }
+    .slide__banner .content_banner h3 {
+        font-size: 26px;
+    }
+    .slick-prev,
+    .slick-next {
+        padding: 0;
+    }
+    .slick-prev:hover,
+    .slick-next:hover {
+        font-size: 40px;
+    }
+    .slide__banner .content_banner button {
+        padding: 7px 13px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .page__content {
+        margin-top: 50px;
+    }
+    .card {
+        padding: 0 20px 20px 20px;
+        z-index: 2;
+    }
 }
 
 @media (min-width: 767px) and (max-width:991px) {
