@@ -38,6 +38,11 @@
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
+    .offcanvas.show,
+    .offcanvas-start {
+        width: 300px;
+        max-width: 100%;
+    }
 }
 
 

@@ -6,6 +6,7 @@
 
 :root {
     --primary-color: #4daf54;
+    --primary-red: red;
 }
 
 .separator::after {
@@ -116,6 +117,19 @@ header {
 
 .header__bot .nav-link {
     position: relative;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.header__bot .nav-link:hover {
+    text-decoration: underline;
+}
+
+.header__bot .nav-link.active {
+    text-decoration: underline;
 }
 
 .header__bot .nav-item:hover .menu__converse {
@@ -145,6 +159,16 @@ header {
 
 
 /* main */
+
+.btn__seemore {
+    text-align: center;
+}
+
+.btn__seemore button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
 
 
 /* slide_banner */
