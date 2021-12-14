@@ -8,7 +8,10 @@
     <title>Trang chủ</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -89,7 +92,7 @@
         </div>
     </header>
     <!-- nav_respon -->
-    <div class="nav__respon d-none">
+    <div class="nav__respon">
         <nav class="navbar navbar-light bg-light fixed-top">
             <div class="container">
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -144,50 +147,28 @@
     <!-- main -->
     <main>
         <!-- slide_banner -->
-        <section class="slide__banner">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item bg__img active" data-bs-interval="3000">
-                        <div class="content__slide-img">
-                            <h3 class="title__sli-img">SALE OFF</h3>
-                            <div>
-                                <button class="btn__sli-img">XEM NGAY</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item bg__img" data-bs-interval="3000">
-                        <div class="content__slide-img">
-                            <h3 class="title__sli-img">NIKE</h3>
-                            <div>
-                                <button class="btn__sli-img">XEM NGAY</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item bg__img">
-                        <div class="content__slide-img">
-                            <h3 class="title__sli-img">ADIDAS</h3>
-                            <div>
-                                <button class="btn__sli-img">XEM NGAY</button>
-                            </div>
-                        </div>
+        <section>
+            <div class="slide__banner">
+                <div class="banner_img">
+                    <img src="img/slideshow_2.jpeg" alt="">
+                    <div class="content_banner">
+                        <h3>SALE OFF</h3>
+                        <button>Xem ngay</button>
                     </div>
                 </div>
-                <div class="click_anim">
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
+                <div class="banner_img">
+                    <img src="img/slideshow_3.jpeg" alt="">
+                    <div class="content_banner">
+                        <h3>SALE OFF</h3>
+                        <button>Xem ngay</button>
+                    </div>
                 </div>
-                <div class="click_anim">
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+
             </div>
         </section>
         <!-- Page content -->
         <section class="page__content">
+            <!-- sale off -->
             <div class="container">
                 <!-- title-line -->
                 <div class="title-line">
@@ -444,13 +425,542 @@
                         </div>
                     </div>
                 </div>
+                <div class="text-center"><button>Xem them</button></div>
             </div>
-
+            <!-- sp hightlight -->
+            <div class="banner__content">
+                <a href="#">
+                    <img src="img/banner/promo-banner-1-lg.png" alt="">
+                </a>
+            </div>
+            <div class="container">
+                <!-- title-line -->
+                <div class="title-line">
+                    <h3>SALE OFF</h3>
+                </div>
+                <!-- product -->
+                <div class="row mt-5">
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card__like">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="card__cart">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <div class="card__img">
+                                <a href="#"><img src="img/products/adidas/Giay_Forum_Exhibit_Low_trang_GZ5389_01_standard.png" alt=""></a>
+                            </div>
+                            <div class="card__title"><a href="#">Giày Forum Exhibit Low - Trang</a></div>
+                            <div class="card__price">2.500.000₫</div>
+                            <div class="card__size">
+                                <h3 class="card_size-title">Size:</h3>
+                                <span class="card_size-num">6</span>
+                                <span class="card_size-num">7</span>
+                                <span class="card_size-num">8</span>
+                                <span class="card_size-num">9</span>
+                            </div>
+                            <div class="card__color">
+                                <h3>Color:</h3>
+                                <span class="card__color-green"></span>
+                                <span class="card__color-red"></span>
+                                <span class="card__color-black"></span>
+                            </div>
+                            <div class="card__btn">
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card__like">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="card__cart">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <div class="card__img">
+                                <a href="#"><img src="img/products/adidas/Giay_Forum_Exhibit_Low_trang_GZ5391_01_standard.png" alt=""></a>
+                            </div>
+                            <div class="card__title"><a href="#">Giày Forum Exhibit Low - Do</a></div>
+                            <div class="card__price">2.500.000₫</div>
+                            <div class="card__size">
+                                <h3 class="card_size-title">Size:</h3>
+                                <span class="card_size-num">6</span>
+                                <span class="card_size-num">7</span>
+                                <span class="card_size-num">8</span>
+                                <span class="card_size-num">9</span>
+                            </div>
+                            <div class="card__color">
+                                <h3>Color:</h3>
+                                <span class="card__color-green"></span>
+                                <span class="card__color-red"></span>
+                                <span class="card__color-black"></span>
+                            </div>
+                            <div class="card__btn">
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card__like">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="card__cart">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <div class="card__img">
+                                <a href="#"><img src="img/products/adidas/Giay_Superstar_trang_GX3386_01_standard.png" alt=""></a>
+                            </div>
+                            <div class="card__title"><a href="#">GIÀY SUPERSTAR</a></div>
+                            <div class="card__price">2.500.000₫</div>
+                            <div class="card__size">
+                                <h3 class="card_size-title">Size:</h3>
+                                <span class="card_size-num">6</span>
+                                <span class="card_size-num">7</span>
+                                <span class="card_size-num">8</span>
+                                <span class="card_size-num">9</span>
+                            </div>
+                            <div class="card__color">
+                                <h3>Color:</h3>
+                                <span class="card__color-green"></span>
+                                <span class="card__color-red"></span>
+                                <span class="card__color-black"></span>
+                            </div>
+                            <div class="card__btn">
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card__like">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="card__cart">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <div class="card__img">
+                                <a href="#"><img src="img/products/nike/air-force-1-07-shoes-lLn274.png" alt=""></a>
+                            </div>
+                            <div class="card__title"><a href="#">Nike Zoom KD 12</a></div>
+                            <div class="card__price">$99</div>
+                            <div class="card__size">
+                                <h3 class="card_size-title">Size:</h3>
+                                <span class="card_size-num">6</span>
+                                <span class="card_size-num">7</span>
+                                <span class="card_size-num">8</span>
+                                <span class="card_size-num">9</span>
+                            </div>
+                            <div class="card__color">
+                                <h3>Color:</h3>
+                                <span class="card__color-green"></span>
+                                <span class="card__color-red"></span>
+                                <span class="card__color-black"></span>
+                            </div>
+                            <div class="card__btn">
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card__like">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="card__cart">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <div class="card__img">
+                                <a href="#"><img src="Nike Zoom KD 12.png" alt=""></a>
+                            </div>
+                            <div class="card__title"><a href="#">Nike Zoom KD 12</a></div>
+                            <div class="card__price">$99</div>
+                            <div class="card__size">
+                                <h3 class="card_size-title">Size:</h3>
+                                <span class="card_size-num">6</span>
+                                <span class="card_size-num">7</span>
+                                <span class="card_size-num">8</span>
+                                <span class="card_size-num">9</span>
+                            </div>
+                            <div class="card__color">
+                                <h3>Color:</h3>
+                                <span class="card__color-green"></span>
+                                <span class="card__color-red"></span>
+                                <span class="card__color-black"></span>
+                            </div>
+                            <div class="card__btn">
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card__like">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="card__cart">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <div class="card__img">
+                                <a href="#"><img src="Nike Zoom KD 12.png" alt=""></a>
+                            </div>
+                            <div class="card__title"><a href="#">Nike Zoom KD 12</a></div>
+                            <div class="card__price">$99</div>
+                            <div class="card__size">
+                                <h3 class="card_size-title">Size:</h3>
+                                <span class="card_size-num">6</span>
+                                <span class="card_size-num">7</span>
+                                <span class="card_size-num">8</span>
+                                <span class="card_size-num">9</span>
+                            </div>
+                            <div class="card__color">
+                                <h3>Color:</h3>
+                                <span class="card__color-green"></span>
+                                <span class="card__color-red"></span>
+                                <span class="card__color-black"></span>
+                            </div>
+                            <div class="card__btn">
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card__like">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="card__cart">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <div class="card__img">
+                                <a href="#"><img src="Nike Zoom KD 12.png" alt=""></a>
+                            </div>
+                            <div class="card__title"><a href="#">Nike Zoom KD 12</a></div>
+                            <div class="card__price">$99</div>
+                            <div class="card__size">
+                                <h3 class="card_size-title">Size:</h3>
+                                <span class="card_size-num">6</span>
+                                <span class="card_size-num">7</span>
+                                <span class="card_size-num">8</span>
+                                <span class="card_size-num">9</span>
+                            </div>
+                            <div class="card__color">
+                                <h3>Color:</h3>
+                                <span class="card__color-green"></span>
+                                <span class="card__color-red"></span>
+                                <span class="card__color-black"></span>
+                            </div>
+                            <div class="card__btn">
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card__like">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="card__cart">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <div class="card__img">
+                                <a href="#"><img src="Nike Zoom KD 12.png" alt=""></a>
+                            </div>
+                            <div class="card__title"><a href="#">Nike Zoom KD 12</a></div>
+                            <div class="card__price">$99</div>
+                            <div class="card__size">
+                                <h3 class="card_size-title">Size:</h3>
+                                <span class="card_size-num">6</span>
+                                <span class="card_size-num">7</span>
+                                <span class="card_size-num">8</span>
+                                <span class="card_size-num">9</span>
+                            </div>
+                            <div class="card__color">
+                                <h3>Color:</h3>
+                                <span class="card__color-green"></span>
+                                <span class="card__color-red"></span>
+                                <span class="card__color-black"></span>
+                            </div>
+                            <div class="card__btn">
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center"><button>Xem them</button></div>
+            </div>
+            <!-- sp hightlight -->
+            <div class="banner__content">
+                <a href="#">
+                    <img src="img/banner/promo-banner-2-lg.png" alt="">
+                </a>
+            </div>
+            <div class="container">
+                <!-- title-line -->
+                <div class="title-line">
+                    <h3>SALE OFF</h3>
+                </div>
+                <!-- product -->
+                <div class="row mt-5">
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card__like">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="card__cart">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <div class="card__img">
+                                <a href="#"><img src="img/products/adidas/Giay_Forum_Exhibit_Low_trang_GZ5389_01_standard.png" alt=""></a>
+                            </div>
+                            <div class="card__title"><a href="#">Giày Forum Exhibit Low - Trang</a></div>
+                            <div class="card__price">2.500.000₫</div>
+                            <div class="card__size">
+                                <h3 class="card_size-title">Size:</h3>
+                                <span class="card_size-num">6</span>
+                                <span class="card_size-num">7</span>
+                                <span class="card_size-num">8</span>
+                                <span class="card_size-num">9</span>
+                            </div>
+                            <div class="card__color">
+                                <h3>Color:</h3>
+                                <span class="card__color-green"></span>
+                                <span class="card__color-red"></span>
+                                <span class="card__color-black"></span>
+                            </div>
+                            <div class="card__btn">
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card__like">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="card__cart">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <div class="card__img">
+                                <a href="#"><img src="img/products/adidas/Giay_Forum_Exhibit_Low_trang_GZ5391_01_standard.png" alt=""></a>
+                            </div>
+                            <div class="card__title"><a href="#">Giày Forum Exhibit Low - Do</a></div>
+                            <div class="card__price">2.500.000₫</div>
+                            <div class="card__size">
+                                <h3 class="card_size-title">Size:</h3>
+                                <span class="card_size-num">6</span>
+                                <span class="card_size-num">7</span>
+                                <span class="card_size-num">8</span>
+                                <span class="card_size-num">9</span>
+                            </div>
+                            <div class="card__color">
+                                <h3>Color:</h3>
+                                <span class="card__color-green"></span>
+                                <span class="card__color-red"></span>
+                                <span class="card__color-black"></span>
+                            </div>
+                            <div class="card__btn">
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card__like">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="card__cart">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <div class="card__img">
+                                <a href="#"><img src="img/products/adidas/Giay_Superstar_trang_GX3386_01_standard.png" alt=""></a>
+                            </div>
+                            <div class="card__title"><a href="#">GIÀY SUPERSTAR</a></div>
+                            <div class="card__price">2.500.000₫</div>
+                            <div class="card__size">
+                                <h3 class="card_size-title">Size:</h3>
+                                <span class="card_size-num">6</span>
+                                <span class="card_size-num">7</span>
+                                <span class="card_size-num">8</span>
+                                <span class="card_size-num">9</span>
+                            </div>
+                            <div class="card__color">
+                                <h3>Color:</h3>
+                                <span class="card__color-green"></span>
+                                <span class="card__color-red"></span>
+                                <span class="card__color-black"></span>
+                            </div>
+                            <div class="card__btn">
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card__like">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="card__cart">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <div class="card__img">
+                                <a href="#"><img src="img/products/nike/air-force-1-07-shoes-lLn274.png" alt=""></a>
+                            </div>
+                            <div class="card__title"><a href="#">Nike Zoom KD 12</a></div>
+                            <div class="card__price">$99</div>
+                            <div class="card__size">
+                                <h3 class="card_size-title">Size:</h3>
+                                <span class="card_size-num">6</span>
+                                <span class="card_size-num">7</span>
+                                <span class="card_size-num">8</span>
+                                <span class="card_size-num">9</span>
+                            </div>
+                            <div class="card__color">
+                                <h3>Color:</h3>
+                                <span class="card__color-green"></span>
+                                <span class="card__color-red"></span>
+                                <span class="card__color-black"></span>
+                            </div>
+                            <div class="card__btn">
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card__like">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="card__cart">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <div class="card__img">
+                                <a href="#"><img src="Nike Zoom KD 12.png" alt=""></a>
+                            </div>
+                            <div class="card__title"><a href="#">Nike Zoom KD 12</a></div>
+                            <div class="card__price">$99</div>
+                            <div class="card__size">
+                                <h3 class="card_size-title">Size:</h3>
+                                <span class="card_size-num">6</span>
+                                <span class="card_size-num">7</span>
+                                <span class="card_size-num">8</span>
+                                <span class="card_size-num">9</span>
+                            </div>
+                            <div class="card__color">
+                                <h3>Color:</h3>
+                                <span class="card__color-green"></span>
+                                <span class="card__color-red"></span>
+                                <span class="card__color-black"></span>
+                            </div>
+                            <div class="card__btn">
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card__like">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="card__cart">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <div class="card__img">
+                                <a href="#"><img src="Nike Zoom KD 12.png" alt=""></a>
+                            </div>
+                            <div class="card__title"><a href="#">Nike Zoom KD 12</a></div>
+                            <div class="card__price">$99</div>
+                            <div class="card__size">
+                                <h3 class="card_size-title">Size:</h3>
+                                <span class="card_size-num">6</span>
+                                <span class="card_size-num">7</span>
+                                <span class="card_size-num">8</span>
+                                <span class="card_size-num">9</span>
+                            </div>
+                            <div class="card__color">
+                                <h3>Color:</h3>
+                                <span class="card__color-green"></span>
+                                <span class="card__color-red"></span>
+                                <span class="card__color-black"></span>
+                            </div>
+                            <div class="card__btn">
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card__like">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="card__cart">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <div class="card__img">
+                                <a href="#"><img src="Nike Zoom KD 12.png" alt=""></a>
+                            </div>
+                            <div class="card__title"><a href="#">Nike Zoom KD 12</a></div>
+                            <div class="card__price">$99</div>
+                            <div class="card__size">
+                                <h3 class="card_size-title">Size:</h3>
+                                <span class="card_size-num">6</span>
+                                <span class="card_size-num">7</span>
+                                <span class="card_size-num">8</span>
+                                <span class="card_size-num">9</span>
+                            </div>
+                            <div class="card__color">
+                                <h3>Color:</h3>
+                                <span class="card__color-green"></span>
+                                <span class="card__color-red"></span>
+                                <span class="card__color-black"></span>
+                            </div>
+                            <div class="card__btn">
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="card mb-4">
+                            <div class="card__like">
+                                <i class="bi bi-heart-fill"></i>
+                            </div>
+                            <div class="card__cart">
+                                <i class="bi bi-bag-plus"></i>
+                            </div>
+                            <div class="card__img">
+                                <a href="#"><img src="Nike Zoom KD 12.png" alt=""></a>
+                            </div>
+                            <div class="card__title"><a href="#">Nike Zoom KD 12</a></div>
+                            <div class="card__price">$99</div>
+                            <div class="card__size">
+                                <h3 class="card_size-title">Size:</h3>
+                                <span class="card_size-num">6</span>
+                                <span class="card_size-num">7</span>
+                                <span class="card_size-num">8</span>
+                                <span class="card_size-num">9</span>
+                            </div>
+                            <div class="card__color">
+                                <h3>Color:</h3>
+                                <span class="card__color-green"></span>
+                                <span class="card__color-red"></span>
+                                <span class="card__color-black"></span>
+                            </div>
+                            <div class="card__btn">
+                                <button>Mua ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center"><button>Xem them</button></div>
+            </div>
         </section>
-
     </main>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 

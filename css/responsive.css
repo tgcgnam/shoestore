@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+    .header {
+        display: none;
+    }
+    .nav__respon {
+        display: block;
+    }
+}
+
+@media (min-width: 767px) and (max-width:991px) {
+    .header {
+        display: none;
+    }
+    .nav__respon {
+        display: block;
+    }
+}
