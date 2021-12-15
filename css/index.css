@@ -5,8 +5,7 @@
 }
 
 :root {
-    --primary-color: #4daf54;
-    --primary-red: red;
+    --primary-color: #f33635;
 }
 
 .separator::after {
@@ -108,7 +107,7 @@ header {
 }
 
 .cart-header .cart-icon:hover {
-    border: 1px solid #e63535;
+    border: 1px solid var(--primary-color);
 }
 
 .header__bot {
@@ -198,14 +197,18 @@ header {
 .slide__banner .content_banner h3 {
     font-size: 60px;
     color: #fff;
-    text-shadow: 2px 1px #333;
+    text-shadow: 2px 1px var(--primary-color);
     letter-spacing: 10px;
 }
 
-.slide__banner .content_banner button {
+.slide__banner .content_banner button,
+.btn__seemore button {
     border: none;
     padding: 8px 20px;
-    color: #333;
+    transition: 0.5s;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--primary-color);
 }
 
 .slick-prev,
@@ -215,7 +218,7 @@ header {
     border: none;
     transform: translateY(-50%);
     z-index: 2;
-    font-size: 40px;
+    font-size: 60px;
     background-color: inherit;
     padding: 20px;
     color: #333;
@@ -223,8 +226,7 @@ header {
 
 .slick-prev:hover,
 .slick-next:hover {
-    font-size: 80px;
-    transition: all .5s ease;
+    color: var(--primary-color);
 }
 
 .slick-prev {
@@ -257,7 +259,7 @@ header {
 }
 
 .slick-dots .slick-active button {
-    background-color: red;
+    background-color: var(--primary-color);
 }
 
 
@@ -311,7 +313,7 @@ header {
     height: 280px;
     background-color: #fafafa;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 20px;
     color: #333;
     position: relative;
@@ -379,22 +381,6 @@ header {
     padding-left: 20px;
 }
 
-.card__size,
-.card__color {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.card__size span {
-    background-color: #dadada;
-    padding: 4px 8px;
-    margin: 0 8px;
-    border-radius: 5px;
-    color: #000;
-    cursor: pointer;
-}
-
 .card__color span {
     padding: 10px;
     margin: 0 8px;
@@ -407,7 +393,7 @@ header {
 }
 
 .card__color-red {
-    background-color: red;
+    background-color: var(--primary-color);
 }
 
 .card__color-black {
@@ -427,7 +413,9 @@ header {
     transition: 0.5s;
 }
 
-.card__btn button:hover {
+.slide__banner .content_banner button:hover,
+.card__btn button:hover,
+.btn__seemore button:hover {
     transform: scale(0.9);
 }
 
@@ -443,23 +431,14 @@ header {
     transform: translate(0, -50px);
 }
 
-.card__size,
-.card__color,
 .card__btn {
-    transform: translateY(150px);
+    transform: translateY(75px);
     transition: 0.5s;
     opacity: 0;
     visibility: hidden;
     /* transition-delay: 0.1s; */
 }
 
-.card__size,
-.card__color {
-    display: none;
-}
-
-.card:hover .card__size,
-.card:hover .card__color,
 .card:hover .card__btn {
     transform: translateY(-30px);
     opacity: 1;
@@ -467,5 +446,5 @@ header {
 }
 
 .color_red {
-    color: red;
+    color: var(--primary-color);
 }
