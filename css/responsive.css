@@ -21,10 +21,6 @@
     .slick-next {
         padding: 0;
     }
-    .slick-prev:hover,
-    .slick-next:hover {
-        font-size: 40px;
-    }
     .slide__banner .content_banner button {
         padding: 7px 13px;
         font-size: 16px;
@@ -36,6 +32,7 @@
     .card {
         padding: 0 20px 20px 20px;
         z-index: 2;
+        height: 300px;
     }
     .banner__content {
         margin-top: 2rem;

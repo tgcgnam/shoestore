@@ -36,6 +36,10 @@ header {
     color: #333;
 }
 
+.header__left {
+    padding-left: 10px;
+}
+
 .header__left-logo {
     height: 55px;
 }
@@ -437,7 +441,7 @@ header {
 }
 
 .card__btn {
-    transform: translateY(75px);
+    transform: translateY(40px);
     transition: 0.5s;
     opacity: 0;
     visibility: hidden;
@@ -452,4 +456,22 @@ header {
 
 .color_red {
     color: var(--primary-color);
+}
+
+
+/* footer */
+
+.footer-list-service {
+    display: flex;
+    flex-direction: column;
+}
+
+.follow-icon span,
+.atm-icon {
+    font-size: 1.8rem;
+}
+
+.follow-icon a,
+.atm-icon span {
+    margin-right: 0.5rem;
 }
