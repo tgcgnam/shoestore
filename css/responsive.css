@@ -4,9 +4,12 @@
     .cart-header .cart-icon {
         width: 35px;
         height: 35px;
-        font-size: 22px;
+        font-size: 27px;
         border: none;
         color: #000;
+    }
+    .header__left-logo {
+        height: 40px;
     }
     .slide__banner {
         margin-top: 104px;
