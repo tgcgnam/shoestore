@@ -319,7 +319,7 @@ header {
 /* card product */
 
 .card {
-    height: 280px;
+    height: auto !important;
     background-color: #fafafa;
     border: none;
     border-radius: 10px;
