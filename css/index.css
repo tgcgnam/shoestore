@@ -133,11 +133,16 @@ header {
 }
 
 .header__bot .nav-link:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding-bottom: 5px;
 }
 
 .header__bot .nav-link.active {
-    text-decoration: underline;
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
 }
 
 .header__bot .nav-item:hover .menu__converse {
@@ -319,6 +324,7 @@ header {
 /* card product */
 
 .card {
+    /* height: 280px; */
     height: auto !important;
     background-color: #fafafa;
     border: none;
@@ -378,7 +384,6 @@ header {
 }
 
 .card__price {
-    /* margin-bottom: 15px; */
     font-size: 24px;
 }
 
@@ -429,15 +434,12 @@ header {
 }
 
 .card:hover .card__img {
-    transform: translateY(-90px) rotate(-20deg);
+    transform: translateY(-40px) rotate(-20deg);
 }
 
-.card:hover .card__title {
-    transform: translate(0, -50px);
-}
-
+.card:hover .card__title,
 .card:hover .card__price {
-    transform: translate(0, -50px);
+    transform: translate(0, -25px);
 }
 
 .card__btn {
@@ -449,7 +451,7 @@ header {
 }
 
 .card:hover .card__btn {
-    transform: translateY(-30px);
+    transform: translateY(0px);
     opacity: 1;
     visibility: visible;
 }
@@ -461,9 +463,44 @@ header {
 
 /* footer */
 
+footer {}
+
+.footer-service {
+    background-color: #333;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+.footer-service-box {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-service-box:hover .footer-icon-service {
+    transform: rotateY(360deg);
+    transition: 1s all;
+}
+
 .footer-list-service {
     display: flex;
     flex-direction: column;
+}
+
+.footer-content-serivce span {
+    display: block;
+}
+
+.footer-icon-service {
+    margin-right: 1rem;
+}
+
+.footer-icon-service span {
+    font-size: 2.5rem;
+    color: var(--primary-color);
 }
 
 .follow-icon span,
@@ -474,4 +511,8 @@ header {
 .follow-icon a,
 .atm-icon span {
     margin-right: 0.5rem;
+}
+
+.footer-infor-item {
+    margin-bottom: 30px;
 }

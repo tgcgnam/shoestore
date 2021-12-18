@@ -34,6 +34,25 @@
         z-index: 2;
         height: 300px;
     }
+    .card:hover .card__btn,
+    .card:hover .card__title,
+    .card:hover .card__price,
+    .card:hover .card__img,
+    .card__btn {
+        transform: translateY(0);
+    }
+    .card__img {
+        width: 100%;
+        transition: 0.5s;
+        padding: 0;
+    }
+    .card__price {
+        margin-bottom: 15px;
+    }
+    .card__btn {
+        opacity: 1;
+        visibility: visible;
+    }
     .banner__content {
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -56,6 +75,9 @@
         display: block;
     }
 }
+
+
+/* tablet */
 
 @media (min-width: 767px) and (max-width:991px) {
     .header {
