@@ -7,6 +7,9 @@ for (let i = 0; i < card__like.length; i++) {
     };
 
 }
+
+
+
 $('.slide__banner').slick({
     dots: true,
     prevArrow: `<button class="slick-prev slick-arrow" aria-label="prev" type="button" style="display: block;"><i class='bx bx-chevron-left'></i></button>`,
